@@ -7,12 +7,15 @@ import { Categoria } from 'src/app/admin/shared/categoria.model';
   providedIn: 'root'
 })
 export class CategoriaService {
-  private apiBase:string = environment.apiBase;
+  private apiBase:string = environment.apiBase+"/categorias";
 
   constructor(private http:HttpClient) { }
-  
+
   getAllCategorias(){
-    return this.http.get<Categoria[]>(`${this.apiBase}/categorias`)
+    return this.http.get<Categoria[]>(this.apiBase)
   }
 
+  crearCategoria(categoria: Categoria) {
+    return this.http.post(this.apiBase, categoria);
+  }
 }

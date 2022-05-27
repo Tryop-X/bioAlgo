@@ -2,9 +2,9 @@
     <a routerLink="/admin/productos"><img src="../../../assets/LogoAdmin.png" alt="BionaturistaLogo"></a>
 </div>
 <mat-nav-list>
-    
+
     <mat-divider></mat-divider>
-    
+
 
     <a mat-list-item routerLink="/admin/productos" class="itensito">
         <mat-icon>redeem</mat-icon> Productos
@@ -12,11 +12,11 @@
 
     <div class="sub-mat-list">
         <button mat-flat-button style="font-size: 1.05rem; text-align: left" class="botonAgregarC" (click)="openModal()">ㅤ +ㅤAgregar Compuesto</button>
-        <button mat-flat-button style="font-size: 1.05rem; text-align: left" class="botonAgregarC">ㅤ +ㅤAgregar Categoría</button>
+        <button mat-flat-button style="font-size: 1.05rem; text-align: left" class="botonAgregarC" (click)="openCrearCategoria()">ㅤ +ㅤAgregar Categoría</button>
     </div>
 
     <a  mat-list-item routerLink="/admin/ventas">
-        <mat-icon>loyalty</mat-icon> 
+        <mat-icon>loyalty</mat-icon>
         Ventas
     </a>
     <a mat-list-item >
@@ -28,8 +28,8 @@
 
 </mat-nav-list>
 
-<!-- 
-No funciona sorry 
+<!--
+No funciona sorry
 <script type="text/javascript">
     $(document).ready(function(){
         $('.mat-list-item').click(function(){
