@@ -7,6 +7,7 @@ import { ProductListComponent } from './products/product-list/product-list.compo
 import { ProductViewComponent } from './products/product-view/product-view.component';
 import { MaterialModule } from '../material/material.module';
 import { CartViewComponent } from './shoppingCart/cart-view/cart-view.component';
+import { ProcesoCompraComponent } from './shoppingCart/proceso-compra/proceso-compra.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CartViewComponent } from './shoppingCart/cart-view/cart-view.component'
     ProductListComponent,
     ProductViewComponent,
     LayoutComponent,
-    CartViewComponent
+    CartViewComponent,
+    ProcesoCompraComponent
   ],
   imports: [
     CommonModule,

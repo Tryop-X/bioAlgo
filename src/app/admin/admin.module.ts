@@ -23,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NewProductComponent } from './products/new-product/new-product.component';
 import { FormProductComponent } from './products/shared/form-product/form-product.component';
 import { MatSelectModule } from '@angular/material/select';
+import { CrearCategoriaComponent } from './crear-categoria/crear-categoria.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { MatSelectModule } from '@angular/material/select';
     HeaderComponent,
     ListProductsComponent,
     NewProductComponent,
-    FormProductComponent
+    FormProductComponent,
+    CrearCategoriaComponent
   ],
   imports: [
     CommonModule,
